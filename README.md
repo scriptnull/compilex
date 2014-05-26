@@ -60,7 +60,7 @@ Documentation
 =============
 1)Require compileX 
 ```javascript
-var compiler = require('compileX');
+var compiler = require('compilex');
 ```
 2)Compiling C and C++
 ```javascript
