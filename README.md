@@ -53,8 +53,7 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
     </li>
 </ol>
 
-<h2>NOTE : create a directory named "temp" in your Project Dirctory. </h2>
-This is where the users files are compiled and executed .
+<b>NOTE : create a directory named "temp" in your Project Dirctory.</b>This is where the users files are compiled and executed . You can/should use flush or flushSync method to clean it manually.
 
 
 Documentation
