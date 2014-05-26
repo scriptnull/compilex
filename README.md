@@ -65,19 +65,26 @@ var compiler = require('compileX');
 2)Compiling C and C++
 ```javascript
     //if windows  
-	var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
-	//else
-	var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
+    var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
+    //else
+    var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
     compiler.compileCPP(envData , code , function (output) {
     	res.send(output);
     });
+    
+    //res is the response object
 ```
 3)Compiling C and C++ with inputs ( providing stdin )
 ```javascript
-	var envData = { OS : "windows" , cmd : "g++"};	   
+    //if windows  
+    var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
+    //else
+    var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
     compiler.compileCPPWithInput(envData , code , input , function (output) {
     	res.send(output);
     });
+    
+    //res is the response object
 ```
 4)Memory Management 
 ```javascript
