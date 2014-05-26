@@ -53,5 +53,40 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
     </li>
 </ol>
 
+<h2>NOTE : create a directory named "temp" in your Project Dirctory. </h2>
+This is where the users files are compiled and executed .
+
+
 Documentation
 =============
+1)Require compileX 
+```javascript
+var compiler = require('compileX');
+```
+2)Compiling C and C++
+```javascript
+    //if windows  
+	var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
+	//else
+	var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
+    compiler.compileCPP(envData , code , function (output) {
+    	res.send(output);
+    });
+```
+3)Compiling C and C++ with inputs ( providing stdin )
+```javascript
+	var envData = { OS : "windows" , cmd : "g++"};	   
+    compiler.compileCPPWithInput(envData , code , input , function (output) {
+    	res.send(output);
+    });
+```
+4)Memory Management 
+```javascript
+    compiler.flush(function(){
+    console.log('All temporary files flushed !'); 
+    });
+```
+
+```javascript
+    compiler.flushSync();
+```
