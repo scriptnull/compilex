@@ -17,7 +17,7 @@ Using compileX , you can built sites and services like the above said examples.
 
 Work Flow
 =========
-1)Get the program as input from the client as a response<br/>
+1)Get the program as input from the client as a request<br/>
 2)Use compileX modules to compile the program <br/>
 3)Get the output as String<br/>
 4)Respond the output to the client<br/>
