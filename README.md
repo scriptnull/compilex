@@ -104,4 +104,4 @@ Synchronous version of flush
 
 License
 =======
-All the contents in this repository are released under the MIT License .
+All the contents in this repository are released under the <a href="https://github.com/scriptnull/compileX/blob/master/License.md">MIT License</a> .
