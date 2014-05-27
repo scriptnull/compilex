@@ -101,3 +101,7 @@ Synchronous version of flush
 ```javascript
     compiler.flushSync();
 ```
+
+License
+=======
+All the contents in this repository are released under the MIT License .
