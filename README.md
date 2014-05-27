@@ -48,7 +48,7 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
     then you will get the output of the program</li>
     </ul>
 <li><b>Jump Start : </b> get compileX via npm <br/>
-    <i><b>npm install compileX</b></i><br/>
+    <i><b>npm install compilex</b></i><br/>
     You can use the compileCPP and compileCPPWithInput methods to compile both C and C++ code. ( Refer Docs given below ).
     </li>
 </ol>
@@ -87,12 +87,17 @@ var compiler = require('compilex');
     //res is the response object
 ```
 4)Memory Management 
+
+All the temporary files ( source code and executables ) are created in your temp directory.
+<b>NOTE : You have to manually create temp directory.</b>
+flush and flushSync helps you to free the memory by deleting the temporary files.
+
 ```javascript
     compiler.flush(function(){
     console.log('All temporary files flushed !'); 
     });
 ```
-
+Synchronous version of flush
 ```javascript
     compiler.flushSync();
 ```
