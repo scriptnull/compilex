@@ -6,10 +6,10 @@ You can compile and respond back outputs for all the languages that can be compi
 
 Some of the online code compiling/judging websites are 
 <ul>
-<li><a href="www.codepad.org">codepad</a></li>
-<li><a href="www.ideone.com">ideone</a></li>
-<li><a href="www.hackerrank.com">HackerRank</a></li>
-<li><a href="www.codechef.com">CodeChef</a></li>
+<li><a href="http://www.codepad.org">codepad</a></li>
+<li><a href="http://www.ideone.com">ideone</a></li>
+<li><a href="http://www.hackerrank.com">HackerRank</a></li>
+<li><a href="http://www.codechef.com">CodeChef</a></li>
 </ul>
 Using compileX , you can built sites and services like the above said examples.
 
