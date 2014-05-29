@@ -53,15 +53,17 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
     </li>
 </ol>
 
-<b>NOTE : create a directory named "temp" in your Project Dirctory.</b>This is where the users files are compiled and executed . You can/should use flush or flushSync method to clean it manually.
-
 
 Documentation
 =============
 1)Require compileX 
 ```javascript
 var compiler = require('compilex');
+compiler.init();
 ```
+init() creates a folder named temp in your project directory which is used for storage purpose.
+Before using other methods , make sure to call init() method.
+
 2)Compiling C and C++
 ```javascript
     //if windows  
@@ -74,6 +76,7 @@ var compiler = require('compilex');
     
     //res is the response object
 ```
+
 3)Compiling C and C++ with inputs ( providing stdin )
 ```javascript
     //if windows  
@@ -86,10 +89,10 @@ var compiler = require('compilex');
     
     //res is the response object
 ```
+
 4)Memory Management 
 
 All the temporary files ( source code and executables ) are created in your temp directory.
-<b>NOTE : You have to manually create temp directory.</b>
 flush and flushSync helps you to free the memory by deleting the temporary files.
 
 ```javascript

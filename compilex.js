@@ -2,6 +2,15 @@ var exec  = require('child_process').exec;
 var fs = require('fs');
 var cuid = require('cuid');
 
+exports.init = function(){
+	fs.exists( './temp' , function(exists){		
+		    if(!exists)
+		    {		    	
+		    	fs.mkdirSync('./temp');
+		    }
+	});
+}
+
 
 exports.compileCPP = function ( envData ,  code , fn ) { 
 
