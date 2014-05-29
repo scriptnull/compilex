@@ -49,14 +49,14 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
     </ul>
 <li><b>Jump Start : </b> get compileX via npm <br/>
     <i><b>npm install compilex</b></i><br/>
-    You can use the compileCPP and compileCPPWithInput methods to compile both C and C++ code. ( Refer Docs given below ).
     </li>
 </ol>
 
 
 Documentation
 =============
-1)Require compileX 
+<h5>1)Require compileX </h5>
+
 ```javascript
 var compiler = require('compilex');
 compiler.init();
@@ -64,7 +64,8 @@ compiler.init();
 init() creates a folder named temp in your project directory which is used for storage purpose.
 Before using other methods , make sure to call init() method.
 
-2)Compiling C and C++
+<h5>2)Compiling C and C++ </h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
@@ -77,7 +78,8 @@ Before using other methods , make sure to call init() method.
     //res is the response object
 ```
 
-3)Compiling C and C++ with inputs ( providing stdin )
+<h5>3)Compiling C and C++ with inputs ( providing stdin ) </h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
@@ -90,8 +92,7 @@ Before using other methods , make sure to call init() method.
     //res is the response object
 ```
 
-4)Memory Management 
-
+<h5>4)Memory Management </h5>
 All the temporary files ( source code and executables ) are created in your temp directory.
 flush and flushSync helps you to free the memory by deleting the temporary files.
 
