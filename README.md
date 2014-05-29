@@ -104,6 +104,9 @@ Synchronous version of flush
 ```javascript
     compiler.flushSync();
 ```
+Examples
+========
+You can find examples <a href="examples">here</a>.
 
 License
 =======
