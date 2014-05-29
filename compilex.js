@@ -22,7 +22,7 @@ exports.compileCPP = function ( envData ,  code , fn ) {
 
 			//create temp0 
  			fs.writeFile( path  +  filename +'.cpp' , code  , function(err ){
-			console.log(err);
+			//console.log(err);
 			});
 
 			//compile c code 
