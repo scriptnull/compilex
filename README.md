@@ -1,5 +1,8 @@
-compileX
-========
+<h1>compileX</h1>
+[![NPM version](https://badge.fury.io/js/compilex.svg)](http://badge.fury.io/js/compilex)
+[![Build Status](https://travis-ci.org/scriptnull/compileX.svg?branch=master)](https://travis-ci.org/scriptnull/compileX)
+<br/>
+
 compileX is a node.js library which is used to build online code editor/compiler websites and webservices.
 
 You can compile and respond back outputs for all the languages that can be compiled by the server.
