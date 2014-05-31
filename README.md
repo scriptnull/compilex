@@ -58,7 +58,8 @@ Documentation
 <h5>1)Require compileX </h5>
 ```javascript
 var compiler = require('compilex');
-compiler.init();
+var option = {stats : true}; //prints stats on console 
+compiler.init(option);
 ```
 init() creates a folder named temp in your project directory which is used for storage purpose.
 Before using other methods , make sure to call init() method.
@@ -69,8 +70,10 @@ Before using other methods , make sure to call init() method.
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
     //else
     var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
-    compiler.compileCPP(envData , code , function (output) {
-    	res.send(output);
+    compiler.compileCPP(envData , code , function (data) {
+    	res.send(data);
+    	//data.error = error message 
+    	//data.output = output value
     });
     
     //res is the response object
@@ -82,8 +85,10 @@ Before using other methods , make sure to call init() method.
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
     //else
     var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
-    compiler.compileCPPWithInput(envData , code , input , function (output) {
-    	res.send(output);
+    compiler.compileCPPWithInput(envData , code , input , function (data) {
+    	res.send(data);
+    	//data.error = error message 
+    	//data.output = output value
     });
     
     //res is the response object
