@@ -1,1 +1,0 @@
-echo "compilex test script"
