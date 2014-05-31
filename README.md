@@ -58,8 +58,8 @@ Documentation
 <h5>1)Require compileX </h5>
 ```javascript
 var compiler = require('compilex');
-var option = {stats : true}; //prints stats on console 
-compiler.init(option);
+var options = {stats : true}; //prints stats on console 
+compiler.init(options);
 ```
 init() creates a folder named temp in your project directory which is used for storage purpose.
 Before using other methods , make sure to call init() method.
