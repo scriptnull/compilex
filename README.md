@@ -113,6 +113,8 @@ Examples
 ========
 You can find examples <a href="examples">here</a>.The examples are downloaded everytime you download compileX via npm.
 you can begin with editing CSS and publish your site in minutes.
+Here is the screenshot of the demo.
+<img src="DemoPicture.png" />
 
 License
 =======
