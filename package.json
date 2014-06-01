@@ -1,6 +1,6 @@
 {
   "name": "compilex",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "compileX is a node.js library which is used to build online code editor/compiler websites and webservices.",
   "main": "compilex.js",
   "dependencies": {
