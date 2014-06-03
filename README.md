@@ -1,6 +1,6 @@
 <h1>compilex</h1>
 [![NPM version](https://badge.fury.io/js/compilex.svg)](http://badge.fury.io/js/compilex)
-[![Build Status](https://travis-ci.org/scriptnull/compileX.svg?branch=master)](https://travis-ci.org/scriptnull/compileX)
+[![Build Status](https://travis-ci.org/scriptnull/compilex.svg?branch=master)](https://travis-ci.org/scriptnull/compilex)
 <br/>
 
 compilex is a node.js library which is used to build online code editor/compiler websites and webservices.
