@@ -16,14 +16,42 @@ Some of the online code compiling/judging websites are
 </ul>
 Using compilex , you can built sites and services like the above said examples.
 
+Why compilex ?
+=============
+1) It is the one and only library implmenting the online compiler concept. <br/>
+2) compilex can detect infinite loops in the users program . <br/>
+3) It can compile programs by getting input from STDIN and from command line arguments. <br/>
+4) Generates statistics for the administrator. <br />
+5) Will include more supporting functions in the future releases.
 
+Supported Languages 
+===================
+compilex is currently in beta . As the library grows , so does the list here .
+
+| Language | Support | 
+|---------|:-------:|
+|C       |&#x2714;|
+|C++ | &#x2714; |
+|Java | Available Soon |
+|Python | Available Soon |
+|C# | Available Soon |
+|Visual Basic | Available Soon |
+|Ruby | Availlable Soon |
+|JavaScript | Available Soon |
+|PHP | Available Soon |
+|Perl | Available Soon |
+|Lua | Available Soon |
+|Haskell| Available Soon |
+|Other Languages | Available Later |
+
+compilex roles out updates more frequently.Days are not so far , you can see the above languages soon.
 
 Work Flow
 =========
-1)Get the program as input from the client as a request<br/>
-2)Use compilex modules to compile the program <br/>
-3)Get the output as String<br/>
-4)Respond the output to the client<br/>
+1) Get the program as input from the client as a request<br/>
+2) Use compilex modules to compile the program <br/>
+3) Get the output as String<br/>
+4) Respond the output to the client<br/>
 
 Mandatory Steps 
 ===============
@@ -120,3 +148,4 @@ Here is the screenshot of the demo.
 License
 =======
 All the contents in this repository are released under the <a href="https://github.com/scriptnull/compileX/blob/master/License.md">MIT License</a> .
+
