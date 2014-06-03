@@ -1,9 +1,9 @@
-<h1>compileX</h1>
+<h1>compilex</h1>
 [![NPM version](https://badge.fury.io/js/compilex.svg)](http://badge.fury.io/js/compilex)
 [![Build Status](https://travis-ci.org/scriptnull/compileX.svg?branch=master)](https://travis-ci.org/scriptnull/compileX)
 <br/>
 
-compileX is a node.js library which is used to build online code editor/compiler websites and webservices.
+compilex is a node.js library which is used to build online code editor/compiler websites and webservices.
 
 You can compile and respond back outputs for all the languages that can be compiled by the server.
 
@@ -14,14 +14,14 @@ Some of the online code compiling/judging websites are
 <li><a href="http://www.hackerrank.com">HackerRank</a></li>
 <li><a href="http://www.codechef.com">CodeChef</a></li>
 </ul>
-Using compileX , you can built sites and services like the above said examples.
+Using compilex , you can built sites and services like the above said examples.
 
 
 
 Work Flow
 =========
 1)Get the program as input from the client as a request<br/>
-2)Use compileX modules to compile the program <br/>
+2)Use compilex modules to compile the program <br/>
 3)Get the output as String<br/>
 4)Respond the output to the client<br/>
 
@@ -29,7 +29,7 @@ Mandatory Steps
 ===============
 Inorder to compile any programming language , you need to first have the compiler for that programming language in the server machine.
 
-The beta version of compileX supports the compilation of C and C++ only . I am sure that you could expect the successive builds with more programming languages added. I also look forward for some contributions to the repo.So feel free to play with compileX
+The beta version of compilex supports the compilation of C and C++ only . I am sure that you could expect the successive builds with more programming languages added. I also look forward for some contributions to the repo.So feel free to play with compilex
 
 <h4>Compiling C and C++</h4>
 <ol>
@@ -50,7 +50,7 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
     ./output.out</b></i><br />
     then you will get the output of the program</li>
     </ul>
-<li><b>Jump Start : </b> get compileX via npm <br/>
+<li><b>Jump Start : </b> get compilex via npm <br/>
     <i><b>npm install compilex</b></i><br/>
     </li>
 </ol>
@@ -58,7 +58,7 @@ The beta version of compileX supports the compilation of C and C++ only . I am s
 
 Documentation
 =============
-<h5>1)Require compileX </h5>
+<h5>1)Require compilex </h5>
 ```javascript
 var compiler = require('compilex');
 var options = {stats : true}; //prints stats on console 
@@ -111,11 +111,11 @@ Synchronous version of flush
 ```
 Examples
 ========
-You can find examples <a href="examples">here</a>.The examples are downloaded everytime you download compileX via npm.
+You can find examples <a href="examples">here</a>.The examples are downloaded everytime you download compilex via npm.
 you can begin with editing CSS and publish your site in minutes.
 Here is the screenshot of the demo.
 <br />
-<img src="https://github.com/scriptnull/compileX/blob/master/DemoPicture.png" />
+![alt text](https://github.com/scriptnull/compileX/raw/master/DemoPicture.png "Screenshot image.")
 
 License
 =======
