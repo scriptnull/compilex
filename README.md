@@ -143,9 +143,9 @@ Before using other methods , make sure to call init() method.
 <h5>4)Compiling Java</h5>
 ```javascript
     //if windows  
-    var envData = { OS : "windows"}; // (uses g++ command to compile )
+    var envData = { OS : "windows"}; 
     //else
-    var envData = { OS : "linux" }; // ( uses gcc command to compile )    
+    var envData = { OS : "linux" }; // (Support for Linux in Next version)
     compiler.compileJavaWithInput( envData , code , function(data){
         res.send(data);
         //data.error = error message 
@@ -158,9 +158,9 @@ Before using other methods , make sure to call init() method.
 <h5>5)Compiling Java with inputs</h5>
 ```javascript
     //if windows  
-    var envData = { OS : "windows"}; // (uses g++ command to compile )
+    var envData = { OS : "windows"}; 
     //else
-    var envData = { OS : "linux" }; // ( uses gcc command to compile )    
+    var envData = { OS : "linux" }; // (Support for Linux in Next version)
     compiler.compileJavaWithInput( envData , code , input ,  function(data){
         res.send(data);
         //data.error = error message 
