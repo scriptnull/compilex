@@ -86,7 +86,7 @@ The beta version of compilex supports the compilation of C and C++ only . I am s
 <h4>Java</h4>
 <ol>
 <li><b>Installion :</b> You need JDK ( Java Development Kit ) to compile Java programs.Click <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> here </a> to download JDK for various platforms.</li>
-<li>Testing the Environment :</b>After installing , set your environment variables for accessing the javac command lines from any directory
+<li><b>Testing the Environment :</b>After installing , set your environment variables for accessing the javac command lines from any directory
 <ul>
 <li>Create a Java file named Main.java with main function<br/>
 <i>javac Main.java <br />
@@ -94,6 +94,9 @@ java Main </i><br/>
 then you will get the output of the program.
 </li>
 </ul>
+<li><b>Jump Start : </b> get compilex via npm <br/>
+    <i><b>npm install compilex</b></i><br/>
+    </li>
 </li>
 </ol>
 
@@ -139,7 +142,7 @@ Before using other methods , make sure to call init() method.
     //res is the response object
 ```
 
-<h5>4)Java</h5>
+<h5>4)Compiling Java</h5>
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; // (uses g++ command to compile )
@@ -154,7 +157,7 @@ Before using other methods , make sure to call init() method.
     //res is the response object
 ```
 
-<h5>5)Java with inputs</h5>
+<h5>5)Compiling Java with inputs</h5>
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; // (uses g++ command to compile )
@@ -193,5 +196,5 @@ Here is the screenshot of the demo.
 
 License
 =======
-All the contents in this repository are released under the <a href="https://github.com/scriptnull/compileX/blob/master/License.md">MIT License</a> .
+All the contents in this repository are released under the <a href="https://github.com/scriptnull/compilex/blob/master/License.md">MIT License</a> .
 
