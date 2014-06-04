@@ -57,8 +57,6 @@ Mandatory Steps
 ===============
 Inorder to compile any programming language , you need to first have the compiler for that programming language in the server machine.
 
-The beta version of compilex supports the compilation of C and C++ only . I am sure that you could expect the successive builds with more programming languages added. I also look forward for some contributions to the repo.So feel free to play with compilex
-
 <h4>C and C++</h4>
 <ol>
 <li><b>Installation :</b>You need GCC compiler that can compile programs from your cmd/terminal
