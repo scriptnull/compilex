@@ -32,7 +32,7 @@ compilex is currently in beta . As the library grows , so does the list here .
 |---------|:-------:|
 |C       |&#x2714;|
 |C++ | &#x2714; |
-|Java | Available Soon |
+|Java | &#x2714; |
 |Python | Available Soon |
 |C# | Available Soon |
 |Visual Basic | Available Soon |
@@ -59,7 +59,7 @@ Inorder to compile any programming language , you need to first have the compile
 
 The beta version of compilex supports the compilation of C and C++ only . I am sure that you could expect the successive builds with more programming languages added. I also look forward for some contributions to the repo.So feel free to play with compilex
 
-<h4>Compiling C and C++</h4>
+<h4>C and C++</h4>
 <ol>
 <li><b>Installation :</b>You need GCC compiler that can compile programs from your cmd/terminal
     <ul>
@@ -81,6 +81,20 @@ The beta version of compilex supports the compilation of C and C++ only . I am s
 <li><b>Jump Start : </b> get compilex via npm <br/>
     <i><b>npm install compilex</b></i><br/>
     </li>
+</ol>
+
+<h4>Java</h4>
+<ol>
+<li><b>Installion :</b> You need JDK ( Java Development Kit ) to compile Java programs.Click <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> here </a> to download JDK for various platforms.</li>
+<li>Testing the Environment :</b>After installing , set your environment variables for accessing the javac command lines from any directory
+<ul>
+<li>Create a Java file named Main.java with main function<br/>
+<i>javac Main.java <br />
+java Main </i><br/>
+then you will get the output of the program.
+</li>
+</ul>
+</li>
 </ol>
 
 
@@ -125,7 +139,37 @@ Before using other methods , make sure to call init() method.
     //res is the response object
 ```
 
-<h5>4)Memory Management </h5>
+<h5>4)Java</h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; // (uses g++ command to compile )
+    //else
+    var envData = { OS : "linux" }; // ( uses gcc command to compile )    
+    compiler.compileJavaWithInput( envData , code , function(data){
+        res.send(data);
+        //data.error = error message 
+        //data.output = output value
+    });
+    
+    //res is the response object
+```
+
+<h5>5)Java with inputs</h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; // (uses g++ command to compile )
+    //else
+    var envData = { OS : "linux" }; // ( uses gcc command to compile )    
+    compiler.compileJavaWithInput( envData , code , input ,  function(data){
+        res.send(data);
+        //data.error = error message 
+        //data.output = output value        
+    });
+    
+    //res is the response object
+```
+
+<h5>6)Memory Management </h5>
 All the temporary files ( source code and executables ) are created in your temp directory.
 flush and flushSync helps you to free the memory by deleting the temporary files.
 ```javascript
@@ -137,11 +181,13 @@ Synchronous version of flush
 ```javascript
     compiler.flushSync();
 ```
+
 Examples
 ========
 You can find examples <a href="examples">here</a>.The examples are downloaded everytime you download compilex via npm.
 you can begin with editing CSS and publish your site in minutes.
 Here is the screenshot of the demo.
+<br />
 <br />
 ![alt text](https://github.com/scriptnull/compileX/raw/master/DemoPicture.png "Screenshot image.")
 
