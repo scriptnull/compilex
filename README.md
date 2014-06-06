@@ -53,7 +53,7 @@ Work Flow
 =========
 1) Get the program as input from the client as a request<br/>
 2) Use compilex modules to compile the program <br/>
-3) Get the output as String<br/>
+3) Get the output and errors in json and string formats <br/>
 4) Respond the output to the client<br/>
 
 Setting Up Compilers 
@@ -165,7 +165,7 @@ Before using other methods , make sure to call init() method.
         res.send(data);
     });
 ```
-<h5>4)Python</h5>
+<h5>6)Python</h5>
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -176,7 +176,7 @@ Before using other methods , make sure to call init() method.
     });    
 ```
 
-<h5>5)Python with inputs</h5>
+<h5>7)Python with inputs</h5>
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -189,7 +189,7 @@ Before using other methods , make sure to call init() method.
 
 
 
-<h5>6)Memory Management </h5>
+<h5>8)Memory Management </h5>
 All the temporary files ( source code and executables ) are created in your temp directory.
 flush and flushSync helps you to free the memory by deleting the temporary files.
 ```javascript
