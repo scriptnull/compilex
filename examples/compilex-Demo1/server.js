@@ -76,6 +76,23 @@ app.post('/compilecode' , function (req , res ) {
         }
 
     }
+    if( lang === "Python")
+    {
+        if(inputRadio === "true")
+        {
+            var envData = { OS : "windows"};
+            compiler.compilePythonWithInput(envData , code , input , function(data){
+                res.send(data);
+            });            
+        }
+        else
+        {
+            var envData = { OS : "windows"};
+            compiler.compilePython(envData , code , function(data){
+                res.send(data);
+            });
+        }
+    }
 
 });
 

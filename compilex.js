@@ -53,6 +53,18 @@ exports.compileJavaWithInput = function ( envData , code , input ,  fn ){
 	javaModule.compileJavaWithInput( envData , code , input ,  fn );	
 }
 
+exports.compilePython = function ( envData ,  code , fn ){
+	if(exports.stats)
+		pyModule.stats = true;
+	pyModule.compilePython(envData , code , fn );
+}
+
+exports.compilePythonWithInput = function( envData , code , input ,  fn){
+	if(exports.stats)
+		pyModule.stats = true;
+	pyModule.compilePythonWithInput(envData , code , input , fn );
+
+}
 
 exports.flushSync = function() {
 	    path = '	./temp/';
