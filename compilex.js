@@ -4,6 +4,7 @@ var cuid = require('cuid');
 var colors = require('colors');
 var cppModule = require('./cppModule.js');
 var javaModule = require('./javaModule.js');
+var pyModule = require('./pyModule.js');
 
 exports.stats = false;
 
