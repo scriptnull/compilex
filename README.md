@@ -1,7 +1,10 @@
 <h1>compilex</h1>
 [![NPM version](https://badge.fury.io/js/compilex.svg)](http://badge.fury.io/js/compilex)
 [![Build Status](https://travis-ci.org/scriptnull/compilex.svg?branch=master)](https://travis-ci.org/scriptnull/compilex)
-<br/>
+[![Dependency Status](https://david-dm.org/scriptnull/compilex.svg)](https://david-dm.org/scriptnull/compilex)
+[![Download Status](http://img.shields.io/npm/dm/compilex.svg)](https://www.npmjs.org/package/compilex)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/scriptnull/compilex/blob/master/License.md)
+
 
 compilex is a node.js library which is used to build online code editor/compiler websites and webservices.
 
@@ -28,9 +31,9 @@ Supported Languages
 ===================
 compilex is currently in beta . As the library grows , so does the list here .
 
-| Language | Support | 
-|---------|:-------:| 
-|C       |&#x2714;|
+| Language | Support |
+|---------|:-------:|
+|C |&#x2714;|
 |C++ | &#x2714; |
 |Java | &#x2714; |
 |Python | Available Soon |
@@ -76,9 +79,6 @@ Inorder to compile any programming language , you need to first have the compile
     ./output.out</b></i><br />
     then you will get the output of the program</li>
     </ul>
-<li><b>Jump Start : </b> get compilex via npm <br/>
-    <i><b>npm install compilex</b></i><br/>
-    </li>
 </ol>
 
 <h4>Java</h4>
@@ -92,10 +92,6 @@ java Main </b></i><br/>
 then you will get the output of the program.
 </li>
 </ul>
-<li><b>Jump Start : </b> get compilex via npm <br/>
-    <i><b>npm install compilex</b></i><br/>
-    </li>
-</li>
 </ol>
 
 <h4>Python</h4>
@@ -108,10 +104,6 @@ then you will get the output of the program.
 then you will get the output of the program.
 </li>
 </ul>
-<li><b>Jump Start : </b> get compilex via npm <br/>
-    <i><b>npm install compilex</b></i><br/>
-    </li>
-</li>
 </ol>
 
 
@@ -214,4 +206,6 @@ Here is the screenshot of the demo.
 License
 =======
 All the contents in this repository are released under the <a href="https://github.com/scriptnull/compilex/blob/master/License.md">MIT License</a> .
+
+[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/scriptnull/)
 
