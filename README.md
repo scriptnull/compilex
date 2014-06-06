@@ -36,7 +36,7 @@ compilex is currently in beta . As the library grows , so does the list here .
 |C |&#x2714;|
 |C++ | &#x2714; |
 |Java | &#x2714; |
-|Python | Available Soon |
+|Python | &#x2714; |
 |C# | Available Soon |
 |Visual Basic | Available Soon |
 |Ruby | Availlable Soon |
@@ -107,9 +107,6 @@ then you will get the output of the program.
 </ol>
 
 
-<br/>
-<br/>
-
 Documentation
 =============
 <h5>1)Require compilex </h5>
@@ -121,43 +118,13 @@ compiler.init(options);
 init() creates a folder named temp in your project directory which is used for storage purpose.
 Before using other methods , make sure to call init() method.
 
-<h5>2)Compiling C and C++ </h5>
+<h5>2)C and C++ </h5>
 ```javascript
     //if windows  
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
     //else
     var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
     compiler.compileCPP(envData , code , function (data) {
-    	res.send(data);
-    	//data.error = error message 
-    	//data.output = output value
-    });
-    
-    //res is the response object
-```
-
-<h5>3)Compiling C and C++ with inputs ( providing stdin ) </h5>
-```javascript
-    //if windows  
-    var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
-    //else
-    var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
-    compiler.compileCPPWithInput(envData , code , input , function (data) {
-    	res.send(data);
-    	//data.error = error message 
-    	//data.output = output value
-    });
-    
-    //res is the response object
-```
-
-<h5>4)Compiling Java</h5>
-```javascript
-    //if windows  
-    var envData = { OS : "windows"}; 
-    //else
-    var envData = { OS : "linux" }; // (Support for Linux in Next version)
-    compiler.compileJavaWithInput( envData , code , function(data){
         res.send(data);
         //data.error = error message 
         //data.output = output value
@@ -166,7 +133,29 @@ Before using other methods , make sure to call init() method.
     //res is the response object
 ```
 
-<h5>5)Compiling Java with inputs</h5>
+<h5>3)C and C++ with inputs </h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
+    //else
+    var envData = { OS : "linux" , cmd : "gcc" }; // ( uses gcc command to compile )
+    compiler.compileCPPWithInput(envData , code , input , function (data) {
+        res.send(data);
+    });
+```
+
+<h5>4)Java</h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" }; // (Support for Linux in Next version)
+    compiler.compileJava( envData , code , function(data){
+        res.send(data);
+    });    
+```
+
+<h5>5)Java with inputs</h5>
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -174,12 +163,31 @@ Before using other methods , make sure to call init() method.
     var envData = { OS : "linux" }; // (Support for Linux in Next version)
     compiler.compileJavaWithInput( envData , code , input ,  function(data){
         res.send(data);
-        //data.error = error message 
-        //data.output = output value        
     });
-    
-    //res is the response object
 ```
+<h5>4)Python</h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" }; 
+    compiler.compilePython( envData , code , function(data){
+        res.send(data);
+    });    
+```
+
+<h5>5)Python with inputs</h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" }; 
+    compiler.compilePythonWithInput( envData , code , input ,  function(data){
+        res.send(data);        
+    });
+```
+
+
 
 <h5>6)Memory Management </h5>
 All the temporary files ( source code and executables ) are created in your temp directory.
