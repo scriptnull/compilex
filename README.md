@@ -29,7 +29,7 @@ Supported Languages
 compilex is currently in beta . As the library grows , so does the list here .
 
 | Language | Support | 
-|---------|:-------:|
+|---------|:-------:| 
 |C       |&#x2714;|
 |C++ | &#x2714; |
 |Java | &#x2714; |
@@ -53,8 +53,8 @@ Work Flow
 3) Get the output as String<br/>
 4) Respond the output to the client<br/>
 
-Mandatory Steps 
-===============
+Setting Up Compilers 
+====================
 Inorder to compile any programming language , you need to first have the compiler for that programming language in the server machine.
 
 <h4>C and C++</h4>
@@ -87,8 +87,8 @@ Inorder to compile any programming language , you need to first have the compile
 <li><b>Testing the Environment :</b>After installing , set your environment variables for accessing the javac command lines from any directory
 <ul>
 <li>Create a Java file named Main.java with main function<br/>
-<i>javac Main.java <br />
-java Main </i><br/>
+<i><b>javac Main.java <br />
+java Main </b></i><br/>
 then you will get the output of the program.
 </li>
 </ul>
@@ -98,6 +98,25 @@ then you will get the output of the program.
 </li>
 </ol>
 
+<h4>Python</h4>
+<ol>
+<li><b>Installation :</b> You can get and install Python from <a href="https://www.python.org/download/"> here </a></li>
+<li><b>Testing the Environment :</b>After installing , set your environment variables for accessing python command lines from any directory
+<ul>
+<li>Create a python file hello.py and execute <br/>
+<i><b>python hello.py</b></i><br/>
+then you will get the output of the program.
+</li>
+</ul>
+<li><b>Jump Start : </b> get compilex via npm <br/>
+    <i><b>npm install compilex</b></i><br/>
+    </li>
+</li>
+</ol>
+
+
+<br/>
+<br/>
 
 Documentation
 =============
