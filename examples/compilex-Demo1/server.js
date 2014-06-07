@@ -96,4 +96,10 @@ app.post('/compilecode' , function (req , res ) {
 
 });
 
+app.get('/fullStat' , function(req , res ){
+    compiler.fullStat(function(data){
+        res.send(data);
+    });
+});
+
 app.listen(8080);

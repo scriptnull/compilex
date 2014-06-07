@@ -29,7 +29,7 @@ Why compilex ?
 
 Supported Languages 
 ===================
-compilex is currently in beta . As the library grows , so does the list here .
+compilex is currently in initial development stage . As the library grows , so does the list here .
 
 | Language | Support |
 |---------|:-------:|
@@ -200,6 +200,15 @@ flush and flushSync helps you to free the memory by deleting the temporary files
 Synchronous version of flush
 ```javascript
     compiler.flushSync();
+```
+
+<h5>9)Statistical Data</h5>
+Getting statistics about your compilex server has been taken care.
+fullStat returns json data about your server.
+```javascript
+    compiler.fullStat(function(data){
+        res.send(data);
+    });
 ```
 
 Examples

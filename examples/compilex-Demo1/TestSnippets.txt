@@ -4,7 +4,7 @@ C
 #include<stdio.h>
 int main()
 {
-	printf("Hello World from C");
+    printf("Hello World from C");
         return 0;
 }
 
@@ -27,15 +27,15 @@ C++
 using namespace std;
 int main()
 {
-	cout<<"Hello World from C++";	
-	return 0;
+    cout<<"Hello World from C++";   
+    return 0;
 }
 
 #include<iostream>
 using namespace std;
 int main()
 {
-	int a , b, c ;
+    int a , b, c ;
     cin>>a;
     cin>>b;
     c = a + b ;
