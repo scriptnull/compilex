@@ -106,6 +106,21 @@ then you will get the output of the program.
 </ul>
 </ol>
 
+<h4>C#</h4>
+<ol>
+<li><b>Installation :</b> You can have the idea of accessing C# compiler from <a href="http://msdn.microsoft.com/en-us/library/ms379563(v=vs.80).aspx"> here </a></li>
+<li><b>Testing the Environment :</b>After installing , set your environment variables for accessing python command lines from any directory
+<ul>
+<li>Create a C# file Hello.cs and execute <br/>
+<i><b>csc Hello.cs <br/>
+     Hello.exe
+</b></i><br/>
+then you will get the output of the program.
+</li>
+</ul>
+</ol>
+
+<b>NOTE : </b> Video demos for setting up the compilers and using compilex will be availble soon.
 
 Documentation
 =============
@@ -189,7 +204,7 @@ Before using other methods , make sure to call init() method.
 <h5>8)C#</h5>
 ```javascript
     var envData = { OS : "windows"}; 
-    //mono modules for linux (not included)
+    //mono modules for linux is not included till now
     compiler.compileCS( envData , code , function(data){
         res.send(data);
     });    
@@ -197,10 +212,9 @@ Before using other methods , make sure to call init() method.
 
 <h5>9)C# with inputs</h5>
 ```javascript
-    //if windows  
+
     var envData = { OS : "windows"}; 
-    //else
-    var envData = { OS : "linux" }; 
+    //mono modules for linux is not included till now
     compiler.compileCSWithInput( envData , code , input ,  function(data){
         res.send(data);        
     });
