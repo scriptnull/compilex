@@ -111,6 +111,24 @@ app.post('/compilecode' , function (req , res ) {
         }
 
     }
+    if( lang === "VB")
+    {
+        if(inputRadio === "true")
+        {
+            var envData = { OS : "windows"};
+            compiler.compileVBWithInput(envData , code , input , function(data){
+                res.send(data);
+            });            
+        }
+        else
+        {
+            var envData = { OS : "windows"};
+            compiler.compileVB(envData , code , function(data){
+                res.send(data);
+            });
+        }
+
+    }
 
 });
 
