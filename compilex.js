@@ -6,6 +6,8 @@ var cppModule = require('./cppModule.js');
 var javaModule = require('./javaModule.js');
 var pyModule = require('./pyModule.js');
 var csModule = require('./csModule.js');
+var vbModule = require('./vbModule.js');
+
 
 exports.stats = false;
 
@@ -80,6 +82,17 @@ exports.compileCSWithInput = function ( envData , code , input ,  fn ) {
 	csModule.compileCSWithInput(envData , code , input , fn );	
 }
 
+exports.compileVB = function ( envData ,  code , fn ){
+	if(exports.stats)
+		vbModule.stats = true;
+	vbModule.compileVB(envData , code , fn );
+}
+
+exports.compileVBWithInput = function ( envData , code , input ,  fn ) { 
+	if(exports.stats)
+		vbModule.stats = true;
+	vbModule.compileVBWithInput(envData , code , input , fn );	
+}
 
 exports.flushSync = function() {
 	    path = '	./temp/';
