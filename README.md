@@ -23,7 +23,7 @@ Why compilex ?
 =============
 1) It is the one and only library implmenting the online compiler concept. <br/>
 2) compilex can detect infinite loops in the users program . <br/>
-3) It can compile programs by getting input from STDIN and from command line arguments. <br/>
+3) It can compile programs by getting input from STDIN.<br/>
 4) Generates statistics for the administrator. <br />
 5) Will include more supporting functions in the future releases.
 
@@ -37,7 +37,7 @@ compilex is currently in initial development stage . As the library grows , so d
 |C++ | &#x2714; |
 |Java | &#x2714; |
 |Python | &#x2714; |
-|C# | Available Soon |
+|C# | &#x2714; |
 |Visual Basic | Available Soon |
 |Ruby | Availlable Soon |
 |JavaScript | Available Soon |
@@ -186,10 +186,28 @@ Before using other methods , make sure to call init() method.
         res.send(data);        
     });
 ```
+<h5>8)C#</h5>
+```javascript
+    var envData = { OS : "windows"}; 
+    //mono modules for linux (not included)
+    compiler.compileCS( envData , code , function(data){
+        res.send(data);
+    });    
+```
+
+<h5>9)C# with inputs</h5>
+```javascript
+    //if windows  
+    var envData = { OS : "windows"}; 
+    //else
+    var envData = { OS : "linux" }; 
+    compiler.compileCSWithInput( envData , code , input ,  function(data){
+        res.send(data);        
+    });
+```
 
 
-
-<h5>8)Memory Management </h5>
+<h5>10)Memory Management </h5>
 All the temporary files ( source code and executables ) are created in your temp directory.
 flush and flushSync helps you to free the memory by deleting the temporary files.
 ```javascript
@@ -202,7 +220,7 @@ Synchronous version of flush
     compiler.flushSync();
 ```
 
-<h5>9)Statistical Data</h5>
+<h5>11)Statistical Data</h5>
 Getting statistics about your compilex server has been taken care.
 fullStat returns json data about your server.
 ```javascript

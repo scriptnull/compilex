@@ -1,6 +1,6 @@
 {
   "name": "compilex",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "compilex is a node.js library which is used to build online code editor/compiler websites and webservices.",
   "main": "compilex.js",
   "dependencies": {
@@ -16,11 +16,10 @@
     "url": "https://github.com/scriptnull/compilex.git"
   },
   "keywords": [
-    "compile",
     "compiler",
+    "compilex",
     "c",
     "c++",
-    "compilex",
     "java",
     "python"
   ],

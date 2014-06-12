@@ -5,6 +5,7 @@ var colors = require('colors');
 var cppModule = require('./cppModule.js');
 var javaModule = require('./javaModule.js');
 var pyModule = require('./pyModule.js');
+var csModule = require('./csModule.js');
 
 exports.stats = false;
 
@@ -66,6 +67,19 @@ exports.compilePythonWithInput = function( envData , code , input ,  fn){
 	pyModule.compilePythonWithInput(envData , code , input , fn );
 
 }
+
+exports.compileCS = function ( envData ,  code , fn ){
+	if(exports.stats)
+		csModule.stats = true;
+	csModule.compileCS(envData , code , fn );
+}
+
+exports.compileCSWithInput = function ( envData , code , input ,  fn ) { 
+	if(exports.stats)
+		csModule.stats = true;
+	csModule.compileCSWithInput(envData , code , input , fn );	
+}
+
 
 exports.flushSync = function() {
 	    path = '	./temp/';
