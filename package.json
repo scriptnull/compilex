@@ -1,6 +1,6 @@
 {
   "name": "compilex",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "compilex is a node.js library which is used to build online code editor/compiler websites and webservices.",
   "main": "compilex.js",
   "dependencies": {
@@ -22,7 +22,12 @@
     "c++",
     "java",
     "python",
-    "c#"
+    "c#",
+    "vb",
+    "gcc",
+    "javac",
+    "csc",
+    "vbc"
   ],
   "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)",
   "license": "MIT",
