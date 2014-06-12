@@ -38,7 +38,7 @@ compilex is currently in initial development stage . As the library grows , so d
 |Java | &#x2714; |
 |Python | &#x2714; |
 |C# | &#x2714; |
-|Visual Basic | Available Soon |
+|Visual Basic | &#x2714; |
 |Ruby | Availlable Soon |
 |JavaScript | Available Soon |
 |PHP | Available Soon |
@@ -106,13 +106,17 @@ then you will get the output of the program.
 </ul>
 </ol>
 
-<h4>C#</h4>
+<h4>C# and VB </h4>
 <ol>
-<li><b>Installation :</b> You can have the idea of accessing C# compiler from <a href="http://msdn.microsoft.com/en-us/library/ms379563(v=vs.80).aspx"> here </a></li>
-<li><b>Testing the Environment :</b>After installing , set your environment variables for accessing python command lines from any directory
+<li><b>Installation :</b> You can have the idea of accessing C# compiler from <a href="http://msdn.microsoft.com/en-us/library/ms379563(v=vs.80).aspx"> here </a> . This step also adds VB compiler to the scope automatically as csc and vbc are located in the same directory </li>
+<li><b>Testing the Environment :</b>After installing , set your environment variables for accessing C# and VB command lines from any directory
 <ul>
-<li>Create a C# file Hello.cs and execute <br/>
+<li>Create a C# or VB file Hello.cs or Hello.vb and execute <br/>
 <i><b>csc Hello.cs <br/>
+     Hello.exe
+</b></i><br/>
+or <br />
+<i><b>vbc Hello.vb <br/>
      Hello.exe
 </b></i><br/>
 then you will get the output of the program.
@@ -219,9 +223,24 @@ Before using other methods , make sure to call init() method.
         res.send(data);        
     });
 ```
+<h5>10)Visual Basic</h5>
+```javascript
+    var envData = { OS : "windows"}; 
+    compiler.compileVB( envData , code , function(data){
+        res.send(data);
+    });    
+```
 
+<h5>11)Visual Basic with inputs</h5>
+```javascript
 
-<h5>10)Memory Management </h5>
+    var envData = { OS : "windows"}; 
+    compiler.compileVBWithInput( envData , code , input ,  function(data){
+        res.send(data);        
+    });
+```
+
+<h5>12)Memory Management </h5>
 All the temporary files ( source code and executables ) are created in your temp directory.
 flush and flushSync helps you to free the memory by deleting the temporary files.
 ```javascript
@@ -234,7 +253,7 @@ Synchronous version of flush
     compiler.flushSync();
 ```
 
-<h5>11)Statistical Data</h5>
+<h5>13)Statistical Data</h5>
 Getting statistics about your compilex server has been taken care.
 fullStat returns json data about your server.
 ```javascript
