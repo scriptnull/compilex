@@ -23,7 +23,7 @@ exports.compileCPP = function ( envData ,  code , fn ) {
 					    {
 					    console.log('INFO: '.green + filename +'.cpp created');	
 	 					//compiling and exrcuiting source code
-					       if(envData.OS === 'windows' || envData.cmd === 'g++')
+					       if(envData.cmd === 'g++')
 					       {
 
 							//compile c code 
@@ -77,7 +77,7 @@ exports.compileCPP = function ( envData ,  code , fn ) {
 
 
 					       }  
-					       else 
+					       else if(envData.cmd === 'gcc')
 					       {
 							//compile c code 
 							commmand = 'gcc ' + path + filename +'.cpp -o '+ path + filename+'.out' ;
@@ -124,7 +124,11 @@ exports.compileCPP = function ( envData ,  code , fn ) {
 
 								}			
 							});
-					       }					    	
+					       }	
+					       else
+					       {
+					       	console.log('ERROR: '.red + 'choose either g++ or gcc ');
+					       }				    	
 						}	//end of else part of err
 					}	//end of expors.stats			
 				}); //end of write file 
@@ -145,7 +149,7 @@ exports.compileCPPWithInput = function ( envData , code , input ,  fn ) {
 	    	else
 	    	{
 				console.log('INFO: '.green + filename +'.cpp created');
-				if(envData.OS === 'windows' || envData.cmd ==='g++')
+				if(envData.cmd ==='g++')
 				    {	    	    
 
 						//compile c code 
@@ -222,7 +226,7 @@ exports.compileCPPWithInput = function ( envData , code , input ,  fn ) {
 						});
 				    								
 				    }
-				else	    	
+				else if ( envData.cmd == 'gcc')	    	
 				    {
 				    				//compile c code 
 						commmand = 'gcc ' + path + filename +'.cpp -o '+ path + filename+'.out' ;
@@ -293,6 +297,10 @@ exports.compileCPPWithInput = function ( envData , code , input ,  fn ) {
 								}				
 							}			
 						});
+				}	
+				else
+				{
+				   	console.log('ERROR: '.red + 'choose either g++ or gcc ');
 				}		    	
 	    	}	//end of else err	    	
 		}	//end of exports.stats
