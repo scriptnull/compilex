@@ -21,6 +21,7 @@ Using compilex , you can built sites and services like the above said examples.
 
 Why compilex ?
 =============
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/scriptnull/compilex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 1) It is the one and only library implmenting the online compiler concept. <br/>
 2) compilex can detect infinite loops in the users program . <br/>
 3) It can compile programs by getting input from STDIN.<br/>
