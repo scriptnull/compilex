@@ -4,6 +4,7 @@
 [![Dependency Status](https://david-dm.org/scriptnull/compilex.svg)](https://david-dm.org/scriptnull/compilex)
 [![Download Status](http://img.shields.io/npm/dm/compilex.svg)](https://www.npmjs.org/package/compilex)
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/scriptnull/compilex/blob/master/License.md)
+[![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/scriptnull/compilex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 compilex is a node.js library which is used to build online code editor/compiler websites and webservices.
