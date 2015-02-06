@@ -22,11 +22,9 @@ Using compilex , you can built sites and services like the above said examples.
 
 Why compilex ?
 =============
-1) It is the one and only library implmenting the online compiler concept. <br/>
-2) compilex can detect infinite loops in the users program . <br/>
-3) It can compile programs by getting input from STDIN.<br/>
-4) Generates statistics for the administrator. <br />
-5) Will include more supporting functions in the future releases.
+1) compilex can detect infinite loops in the users program . <br/>
+2) It can compile programs by getting input from STDIN.<br/>
+3) Generates statistics for the administrator. <br />
 
 Supported Languages 
 ===================
@@ -47,8 +45,6 @@ compilex is currently in initial development stage . As the library grows , so d
 |Lua | Available Soon |
 |Haskell| Available Soon |
 |Other Languages | Available Later |
-
-compilex roles out updates more frequently.Days are not so far , you can see the above languages soon.
 
 Work Flow
 =========
