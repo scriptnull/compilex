@@ -7,7 +7,7 @@
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/scriptnull/compilex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-compilex is a node.js library which is used to build online code editor/compiler websites and webservices.
+compilex is a node.js library which is used to build online code compiler/interpreter websites and webservices.
 
 You can compile and respond back outputs for all the languages that can be compiled by the server.
 
