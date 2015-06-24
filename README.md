@@ -38,13 +38,6 @@ compilex is currently in initial development stage . As the library grows , so d
 |Python | &#x2714; |
 |C# | &#x2714; |
 |Visual Basic | &#x2714; |
-|Ruby | Availlable Soon |
-|JavaScript | Available Soon |
-|PHP | Available Soon |
-|Perl | Available Soon |
-|Lua | Available Soon |
-|Haskell| Available Soon |
-|Other Languages | Available Later |
 
 Work Flow
 =========
