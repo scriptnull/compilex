@@ -20,6 +20,13 @@ Some of the online code compiling/judging websites are
 </ul>
 Using compilex , you can built sites and services like the above said examples.
 
+compilex is an experimental package , however , if you want to build your site quickly , you can prefer to use the API of the above said services. Node.js Wrapper modules for those API are available. You can try [HackerRank SDK](https://github.com/scriptnull/machinepack-hackerrank) and [HackerEarth SDK](https://github.com/scriptnull/he-sdk-nodejs). 
+
+Typical scenarios in which you have to go with wrapper modules instead of compilex are 
+- If you don't want to have the pain of configuring compilers on your server. 
+- If you don't have the access to the VM on which your site is hosted 
+- If you feel tired of configuring compilex over SSH. 
+
 Why compilex ?
 =============
 1) compilex can detect infinite loops in the users program . <br/>
