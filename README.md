@@ -258,6 +258,17 @@ fullStat returns json data about your server.
         res.send(data);
     });
 ```
+<h5>1)options : (windows only c/c++ only)</h5>
+timeout: number of milliseconds to wait before killing the compiled program
+```javascript
+    //compile and execute the file and kill it after 1 second if it still running
+    var envData = { OS : "linux" , cmd : "gcc" ,options: {timeout:1000 } };
+    compiler.compileCPP(envData , code , function (data) {
+        res.send(data);
+        //data.error = error message 
+        //data.output = output value
+    });
+```
 
 Examples
 ========
