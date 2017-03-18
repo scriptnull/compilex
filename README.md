@@ -6,6 +6,7 @@
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/scriptnull/compilex/blob/master/License.md)
 [![Gitter](https://badges.gitter.im/JoinChat.svg)](https://gitter.im/scriptnull/compilex?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+> This package is __DEPRECATED__. Please read the [deprecation notice](https://github.com/scriptnull/compilex/blob/master/README.md#deprecation-notice).
 
 compilex is a node.js library which is used to build online code compiler/interpreter websites and webservices.
 
