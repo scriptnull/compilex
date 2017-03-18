@@ -126,6 +126,7 @@ then you will get the output of the program.
 Documentation
 =============
 <h5>1)Require compilex </h5>
+
 ```javascript
 var compiler = require('compilex');
 var options = {stats : true}; //prints stats on console 
@@ -135,6 +136,7 @@ init() creates a folder named temp in your project directory which is used for s
 Before using other methods , make sure to call init() method.
 
 <h5>2)C and C++ </h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
@@ -150,6 +152,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>3)C and C++ with inputs </h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows" , cmd : "g++"}; // (uses g++ command to compile )
@@ -161,6 +164,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>4)Java</h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -172,6 +176,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>5)Java with inputs</h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -182,6 +187,7 @@ Before using other methods , make sure to call init() method.
     });
 ```
 <h5>6)Python</h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -193,6 +199,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>7)Python with inputs</h5>
+
 ```javascript
     //if windows  
     var envData = { OS : "windows"}; 
@@ -203,6 +210,7 @@ Before using other methods , make sure to call init() method.
     });
 ```
 <h5>8)C#</h5>
+
 ```javascript
     var envData = { OS : "windows"}; 
     //mono modules for linux is not included till now
@@ -212,6 +220,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>9)C# with inputs</h5>
+
 ```javascript
 
     var envData = { OS : "windows"}; 
@@ -221,6 +230,7 @@ Before using other methods , make sure to call init() method.
     });
 ```
 <h5>10)Visual Basic</h5>
+
 ```javascript
     var envData = { OS : "windows"}; 
     compiler.compileVB( envData , code , function(data){
@@ -229,6 +239,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>11)Visual Basic with inputs</h5>
+
 ```javascript
 
     var envData = { OS : "windows"}; 
@@ -238,6 +249,7 @@ Before using other methods , make sure to call init() method.
 ```
 
 <h5>12)Memory Management </h5>
+
 All the temporary files ( source code and executables ) are created in your temp directory.
 flush and flushSync helps you to free the memory by deleting the temporary files.
 ```javascript
@@ -251,6 +263,7 @@ Synchronous version of flush
 ```
 
 <h5>13)Statistical Data</h5>
+
 Getting statistics about your compilex server has been taken care.
 fullStat returns json data about your server.
 ```javascript
