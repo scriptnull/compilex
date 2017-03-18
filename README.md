@@ -1,4 +1,4 @@
-# compilex
+# compilex 
 [![NPM version](https://badge.fury.io/js/compilex.svg)](http://badge.fury.io/js/compilex)
 [![Build Status](https://travis-ci.org/scriptnull/compilex.svg?branch=master)](https://travis-ci.org/scriptnull/compilex)
 [![Dependency Status](https://david-dm.org/scriptnull/compilex.svg)](https://david-dm.org/scriptnull/compilex)
@@ -25,13 +25,7 @@ compilex is an experimental package , however , if you want to build your site q
 Typical scenarios in which you have to go with wrapper modules instead of compilex are 
 - If you don't want to have the pain of configuring compilers on your server. 
 - If you don't have the access to the VM on which your site is hosted 
-- If you feel tired of configuring compilex over SSH. 
-
-Why compilex ?
-=============
-1) compilex can detect infinite loops in the users program . <br/>
-2) It can compile programs by getting input from STDIN.<br/>
-3) Generates statistics for the administrator. <br />
+- If you feel tired of configuring compilex over SSH.
 
 Supported Languages 
 ===================
@@ -120,8 +114,6 @@ then you will get the output of the program.
 </li>
 </ul>
 </ol>
-
-<b>NOTE : </b> Video demos for setting up the compilers and using compilex will be availble soon.
 
 Documentation
 =============
@@ -295,6 +287,4 @@ Here is the screenshot of the demo.
 License
 =======
 All the contents in this repository are released under the <a href="https://github.com/scriptnull/compilex/blob/master/License.md">MIT License</a> .
-
-[![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/scriptnull/)
 
