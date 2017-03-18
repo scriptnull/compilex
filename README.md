@@ -27,6 +27,28 @@ Typical scenarios in which you have to go with wrapper modules instead of compil
 - If you don't have the access to the VM on which your site is hosted 
 - If you feel tired of configuring compilex over SSH.
 
+# Deprecation Notice
+`compilex` is not under active development. It started as an experiment and served its purpose well. But over the time, new technologies like [docker](https://www.docker.com/) emerged. The existence of such technology and [nature of node.js](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/) prove that compilex would not scale well and be production ready with its current state.
+
+Before a production ready rewrite of architecture and code, I considered looking at already existing solutions, which seem to be powerful enough to make me not to rewrite compilex. Here are they,
+
+#### APIs
+There are serveral battle tested APIs, that can help compile code online without the hassle of configuration and infrastructure. Some of them are
+- [Hackerrank API](https://www.hackerrank.com/api)
+- [Hackerearth API](https://www.hackerearth.com/docs/api/developers/code/legacy/)
+- and many more.
+
+#### Container Based Solution
+[Docker containers](https://www.docker.com/) prove to be best fit for running code in an isolated environment ensuring security. Instead of rolling out compilex on the server itself, it would be more sensible to run compilex inside a docker container. For that to happen, we will be needing to build docker images for each language and their versions. 
+
+Luckily, there is already a well managed and [open source solution](https://github.com/prasmussen/glot) called [glot.io](https://glot.io/). It seems to be one stop solution which includes web editor, docker based code runner, more language suppport and production ready. So, I highly recommend looking at [glot.io](https://glot.io/), if the intention is to run a code compiling service on your own infrastructure.
+
+#### Steps forward
+- compilex won't be unpublished from npm. This is to ensure that, projects using compilex is not affected.
+- No PRs will be merged, except bug fixes. compilex will never reach 1.x.x version ( how sad :( ). This is to enforce people to use alternate solutions ( right solutions ) mentioned above.
+
+> "I thank people for their responses and support over mail, gitter, quora etc." - [scriptnull](https://twitter.com/scriptnull)
+
 Supported Languages 
 ===================
 compilex is currently in initial development stage . As the library grows , so does the list here .
