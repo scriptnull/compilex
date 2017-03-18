@@ -1,4 +1,4 @@
-<h1>compilex</h1>
+# compilex
 [![NPM version](https://badge.fury.io/js/compilex.svg)](http://badge.fury.io/js/compilex)
 [![Build Status](https://travis-ci.org/scriptnull/compilex.svg?branch=master)](https://travis-ci.org/scriptnull/compilex)
 [![Dependency Status](https://david-dm.org/scriptnull/compilex.svg)](https://david-dm.org/scriptnull/compilex)
