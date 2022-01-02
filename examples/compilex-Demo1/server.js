@@ -61,7 +61,7 @@ app.post('/compilecode' , function (req , res ) {
         {
             var envData = { OS : "windows" };     
             console.log(code);
-            compiler.compileJavaWithInput( envData , code , function(data){
+            compiler.compileJavaWithInput( envData , code , input , function(data){
                 res.send(data);
             });
         }
@@ -69,7 +69,7 @@ app.post('/compilecode' , function (req , res ) {
         {
             var envData = { OS : "windows" };     
             console.log(code);
-            compiler.compileJavaWithInput( envData , code , input ,  function(data){
+            compiler.compileJava( envData , code ,  function(data){
                 res.send(data);
             });
 
