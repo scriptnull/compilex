@@ -18,16 +18,18 @@ exports.compilePython = function (envData , code , fn){
 		    else
 		    console.log('INFO: '.green + filename +'.py created');	
 		}
-		if(!err)
-		{
-			var command = 'python ' + path + filename +'.py';
-			exec( command , function ( error , stdout , stderr ){
-				if(error)
-				{
-					if(error.toString().indexOf('Error: stdout maxBuffer exceeded.') != -1)
-					{
-						var out = { error : 'Error: stdout maxBuffer exceeded. You might have initialized an infinite loop.' };
-						fn(out);								
+		if (!err) {
+			if (envData.cmd === 'python') {
+				var command = 'python ' + path + filename + '.py';
+			}
+			else if (envData.cmd === 'python3') {
+				var command = 'python3 ' + path + filename + '.py';
+			}
+			exec(command, function (error, stdout, stderr) {
+				if (error) {
+					if (error.toString().indexOf('Error: stdout maxBuffer exceeded.') != -1) {
+						var out = { error: 'Error: stdout maxBuffer exceeded. You might have initialized an infinite loop.' };
+						fn(out);
 					}
 					else
 					{
@@ -76,16 +78,19 @@ exports.compilePythonWithInput = function( envData , code , input ,  fn){
 				    else
 				    console.log('INFO: '.green + filename +'input.txt created');	
 				}
-				if(!err)
-				{
-					var command = 'python ' + path + filename +'.py < ' + path + filename +'input.txt ' ;
-					exec( command , function ( error , stdout , stderr ){
-						if(error)
-						{
-							if(error.toString().indexOf('Error: stdout maxBuffer exceeded.') != -1)
-							{
-								var out = { error : 'Error: stdout maxBuffer exceeded. You might have initialized an infinite loop.' };
-								fn(out);								
+				if (!err) {
+					if (envData.cmd === 'python') {
+						var command = 'python ' + path + filename + '.py < ' + path + filename + 'input.txt ';
+					}
+					else if (envData.cmd === 'python3') {
+						var command = 'python3 ' + path + filename + '.py < ' + path + filename + 'input.txt ';
+					}
+
+					exec(command, function (error, stdout, stderr) {
+						if (error) {
+							if (error.toString().indexOf('Error: stdout maxBuffer exceeded.') != -1) {
+								var out = { error: 'Error: stdout maxBuffer exceeded. You might have initialized an infinite loop.' };
+								fn(out);
 							}
 							else
 							{
